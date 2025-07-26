@@ -1,0 +1,49 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur font dasar untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Mengatur tampilan header */
+header {
+    background: linear-gradient(to right, #28a745, #218838);
+}
+
+/* Mengatur tampilan tabel */
+.table {
+    margin-top: 20px;
+}
+
+/* Mengatur tampilan form */
+.form-label {
+    font-weight: bold;
+}
+
+/* Mengatur tampilan footer */
+footer {
+    background-color: #343a40;
+}
+
+/* Mengatur tampilan carousel */
+.carousel-item img {
+    max-height: 600px; /* Mengatur tinggi maksimum gambar */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+/* Mengatur tampilan tombol kirim */
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
