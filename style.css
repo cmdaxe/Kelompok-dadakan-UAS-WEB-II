@@ -32,15 +32,30 @@ footer {
 }
 
 /* Mengatur tampilan carousel */
-.carousel-item img {
-    max-height: 600px; /* Mengatur tinggi maksimum gambar */
-    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
-}
 
-.carousel-item {
-    width: 80%;
-    margin: 0 auto;
-}
+  .carousel-control-prev,
+  .carousel-control-next {
+    filter: invert(1); /* Mengubah warna panah menjadi putih */
+    width: 5%; /* Mengatur lebar panah */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan untuk panah */
+    border-radius: 50%; /* Membuat panah berbentuk bulat */
+  }
+
+  .carousel-item {
+    position: relative; /* Memungkinkan posisi absolut untuk panah */
+  }
+
+  .carousel-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
 /* Mengatur tampilan tombol kirim */
 .btn-success {
     background-color: #28a745;
@@ -50,36 +65,4 @@ footer {
 .btn-success:hover {
     background-color: #218838;
     border-color: #1e7e34;
-}
-
-.running-text {
-      white-space: nowrap;  /* Menghindari teks terpotong */
-      overflow: hidden;     /* Menyembunyikan bagian teks yang keluar */
-      width: 100%;          /* Lebar penuh kontainer */
-      animation: scroll-text 10s linear infinite; /* Menjalankan animasi */
-    }
-
-    @keyframes scroll-text {
-      0% {
-        transform: translateX(100%); /* Mulai dari kanan */
-      }
-
-
-
-      /* Tombol Previous */
-.carousel-control-prev-icon {
-  background-color: #00468d; /* Mengubah warna latar tombol Previous */
-  border-radius: 50%; /* Membuat tombol menjadi bulat */
-}
-
-/* Tombol Next */
-.carousel-control-next-icon {
-  background-color: #00468d; /* Mengubah warna latar tombol Next */
-  border-radius: 50%; /* Membuat tombol menjadi bulat */
-}
-
-/* Anda dapat mengubah warna tombol sesuai kebutuhan */
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  background-color: #007bff; /* Warna latar saat hover */
 }
