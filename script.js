@@ -8,7 +8,7 @@ document.getElementById('faunaForm').addEventListener('submit', function(event) 
     const report = document.getElementById('report').value;
 
     // Menampilkan alert dengan informasi yang diisi
-    alert(`Laporan Diterima!\nNama: ${name}\nEmail: ${email}\nDeskripsi: ${report}`);
+    alert ('Laporan Diterima!');
 
     // Mengosongkan form setelah pengiriman
     this.reset();
